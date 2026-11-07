@@ -21,8 +21,8 @@ Taking ticket NWP-201 end to end in a codebase you did not write, in 40 minutes,
 
 ## What is preloaded
 
-- Skills: `/spec`, `/pr`, `/ship-ready`
-- Subagent: `bug-investigator`, read-only, for diagnosing a report before anyone edits code
+- Skills: `/spec`, `/pr`, `/northwind-pr`, `/ship-ready`, `/submit`
+- Subagents: `bug-investigator`, read-only, for diagnosing a report before anyone edits code; `org-standards`, read-only, for auditing code against `docs/ORG-STANDARDS.md`
 - No hooks. Add your own if you want one.
 
 ## Workflow rules

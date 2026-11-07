@@ -49,8 +49,10 @@ Skipping step 2 is the most common way to lose this. It is also worth 10% of you
 |---|---|
 | `/spec` | Turns the ticket into a plan that cites real files |
 | `/pr` | Writes the pull request description from your branch, the ticket, and the spec |
+| `/northwind-pr` | Writes the description in the Northwind team format: the PR template plus real command output, honestly ticked criteria, and a "Deliberately not done" section. `/submit` uses it |
 | `/ship-ready` | Pre-push check: money math, UTC handling, duplicate logic, unvalidated input |
 | `bug-investigator` | A read-only subagent. Hand it a bug report and it returns a root-cause analysis with file paths. It cannot edit anything, which is exactly why you can trust the report |
+| `org-standards` | A read-only subagent that audits code against every numbered item in [ORG-STANDARDS.md](../docs/ORG-STANDARDS.md) and cites item, file, line and fix |
 
 Try the subagent on [NWP-102](../docs/tickets/NWP-102.md) if you finish early. Nothing in this repository stops you from adding your own skills, subagents, or hooks either — a hook that blocks a push when tests fail is a good ninety seconds of work.
 

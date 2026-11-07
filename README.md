@@ -85,9 +85,11 @@ Run Claude Code from `build-battle/` and you get:
 |---|---|
 | `/spec` | Turns a ticket into a plan that cites real files. Run it before you build |
 | `/pr` | Writes the pull request description from your branch, the ticket, and the spec |
+| `/northwind-pr` | Writes the description in the Northwind team format: the PR template plus real command output, honestly ticked criteria, and a "Deliberately not done" section. `/submit` uses it |
 | `/submit` | Pushes your branch to your fork and opens the pull request against this repo. Run it again after each change |
 | `/ship-ready` | Pre-push check: money math, UTC handling, duplicate logic, unvalidated input |
 | `bug-investigator` | A read-only subagent that diagnoses a bug report and returns a written root-cause analysis. It cannot edit anything, which is the point |
+| `org-standards` | A read-only subagent that audits code against every numbered item in [ORG-STANDARDS.md](docs/ORG-STANDARDS.md) and cites item, file, line and fix |
 
 No hooks are preinstalled. Adding one is a good use of your time if you finish early — a `PreToolUse` hook that blocks a push when tests fail is the obvious one.
 
